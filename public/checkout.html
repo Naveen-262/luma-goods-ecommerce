@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Checkout securely with Luma Goods.">
+    <title>Checkout | Luma Goods</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body data-page="checkout">
+    <div class="site-shell">
+      <header class="site-header" data-site-header></header>
+      <main class="container checkout-page">
+        <div class="page-intro compact-intro">
+          <p class="eyebrow">Almost yours</p>
+          <h1>Checkout<span class="heading-period">.</span></h1>
+          <p class="page-intro-copy">A few details and we’ll get your order moving.</p>
+        </div>
+        <div class="status-message error-state" data-checkout-error role="alert" hidden></div>
+        <div class="checkout-layout" data-checkout-layout>
+          <form class="checkout-form" data-checkout-form novalidate>
+            <fieldset>
+              <legend><span>01</span> Contact details</legend>
+              <div class="field-grid">
+                <label class="field field-full">Full name
+                  <input name="name" type="text" autocomplete="name" maxlength="100" required placeholder="Ada Lovelace">
+                  <span class="field-error" data-error-for="name"></span>
+                </label>
+                <label class="field field-full">Email address
+                  <input name="email" type="email" autocomplete="email" maxlength="254" required placeholder="ada@example.com">
+                  <span class="field-error" data-error-for="email"></span>
+                </label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend><span>02</span> Delivery details</legend>
+              <label class="field field-full">Shipping address
+                <textarea name="address" autocomplete="street-address" maxlength="500" required rows="4" placeholder="1 Example Street&#10;London, W1 1AA"></textarea>
+                <span class="field-error" data-error-for="address"></span>
+              </label>
+            </fieldset>
+            <div class="form-actions">
+              <a class="back-link" href="/cart.html">← Return to bag</a>
+              <button class="button button-dark" type="submit" data-place-order>Place order <span aria-hidden="true">↗</span></button>
+            </div>
+          </form>
+          <aside class="summary-card checkout-summary" aria-labelledby="checkout-summary-title">
+            <h2 id="checkout-summary-title">Your order</h2>
+            <div class="checkout-items" data-checkout-items></div>
+            <div class="summary-row"><span>Subtotal</span><strong data-checkout-subtotal>$0.00</strong></div>
+            <div class="summary-row"><span>Shipping</span><strong>Complimentary</strong></div>
+            <div class="summary-total"><span>Total</span><strong data-checkout-total>$0.00</strong></div>
+          </aside>
+        </div>
+        <div class="empty-state" data-checkout-empty hidden>
+          <div class="empty-icon">⌁</div>
+          <p class="eyebrow">Nothing to check out</p>
+          <h2>Your bag is empty.</h2>
+          <p>Add something from the collection before continuing.</p>
+          <a class="button button-dark" href="/">Browse the collection <span aria-hidden="true">↘</span></a>
+        </div>
+        <section class="order-success" data-order-success hidden aria-live="polite">
+          <div class="success-mark">✓</div>
+          <p class="eyebrow">Order received</p>
+          <h2>Thank you for your order.</h2>
+          <p>We’re getting your everyday essentials ready. Your order reference is <strong data-order-reference></strong>.</p>
+          <a class="button button-dark" href="/">Return to the collection <span aria-hidden="true">↘</span></a>
+        </section>
+      </main>
+      <footer data-site-footer></footer>
+    </div>
+  </body>
+</html>

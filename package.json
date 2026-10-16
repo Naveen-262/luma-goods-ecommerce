@@ -1,0 +1,22 @@
+{
+  "name": "luma-goods-ecommerce",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A simple full-stack e-commerce website built with Express, MySQL, HTML, CSS, and JavaScript",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "db:migrate": "node scripts/migrate-database.js",
+    "db:images": "node scripts/update-product-images.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mysql2": "^3.11.5"
+  }
+}

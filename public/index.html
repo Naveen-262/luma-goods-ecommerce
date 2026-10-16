@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Luma Goods — considered essentials for everyday living.">
+    <title>Luma Goods | Everyday objects, thoughtfully chosen</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body data-page="home">
+    <div class="site-shell">
+      <header class="site-header" data-site-header></header>
+      <main>
+        <section class="hero container" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow">The daily edit · 2026</p>
+            <h1 id="hero-title">Good things,<br><em>made simple.</em></h1>
+            <p class="hero-lede">A small collection of useful, beautiful objects for the rhythms of everyday life.</p>
+            <a class="button button-dark" href="#collection">Shop the collection <span aria-hidden="true">↘</span></a>
+          </div>
+          <div class="hero-art" aria-label="A curated collection of everyday objects" role="img">
+            <div class="hero-orbit hero-orbit-one"></div>
+            <div class="hero-orbit hero-orbit-two"></div>
+            <div class="hero-card hero-card-tall"><span>FORM<br>&amp; FUNCTION</span></div>
+            <div class="hero-card hero-card-round"><span>✦</span></div>
+            <div class="hero-note">No clutter.<br>Just good stuff.</div>
+          </div>
+        </section>
+
+        <section class="trust-strip" aria-label="Luma Goods values">
+          <div class="container trust-grid">
+            <span><strong>01</strong> Carefully considered</span>
+            <span><strong>02</strong> Made for daily use</span>
+            <span><strong>03</strong> Packed with intention</span>
+          </div>
+        </section>
+
+        <section class="collection container" id="collection" aria-labelledby="collection-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">The collection</p>
+              <h2 id="collection-title">Find your everyday favorite.</h2>
+            </div>
+            <p class="section-aside">Objects with a little more thought<br class="desktop-only"> in every detail.</p>
+          </div>
+          <div class="status-message loading-state" data-products-loading role="status">
+            <span class="loader" aria-hidden="true"></span> Gathering the collection…
+          </div>
+          <div class="status-message error-state" data-products-error role="alert" hidden></div>
+          <div class="product-grid" data-product-grid aria-live="polite"></div>
+          <div class="empty-state" data-products-empty hidden>
+            <div class="empty-icon">◌</div>
+            <h3>The shelves are taking a moment.</h3>
+            <p>There are no products to show right now. Please check back soon.</p>
+          </div>
+        </section>
+      </main>
+      <footer data-site-footer></footer>
+    </div>
+  </body>
+</html>

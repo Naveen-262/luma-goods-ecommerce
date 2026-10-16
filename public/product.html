@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Product details from Luma Goods.">
+    <title>Product | Luma Goods</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body data-page="product">
+    <div class="site-shell">
+      <header class="site-header" data-site-header></header>
+      <main class="container product-page">
+        <a class="back-link" href="/">← Back to collection</a>
+        <div class="status-message loading-state" data-product-loading role="status"><span class="loader" aria-hidden="true"></span> Loading details…</div>
+        <div class="status-message error-state" data-product-error role="alert" hidden></div>
+        <div class="product-detail" data-product-detail hidden></div>
+      </main>
+      <footer data-site-footer></footer>
+    </div>
+  </body>
+</html>

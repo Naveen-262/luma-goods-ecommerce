@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Your Luma Goods shopping bag.">
+    <title>Your bag | Luma Goods</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body data-page="cart">
+    <div class="site-shell">
+      <header class="site-header" data-site-header></header>
+      <main class="container cart-page">
+        <div class="page-intro">
+          <p class="eyebrow">Your selection</p>
+          <h1>Your bag<span class="heading-period">.</span></h1>
+          <p class="page-intro-copy" data-cart-caption>Review your considered collection before checking out.</p>
+        </div>
+        <div class="status-message error-state" data-cart-error role="alert" hidden></div>
+        <div class="cart-layout" data-cart-layout>
+          <section class="cart-items" aria-labelledby="bag-items-title">
+            <div class="cart-section-head">
+              <h2 id="bag-items-title">Items <span data-cart-count>0</span></h2>
+              <button class="text-button" type="button" data-clear-cart>Clear bag</button>
+            </div>
+            <div data-cart-items></div>
+          </section>
+          <aside class="summary-card" aria-labelledby="summary-title">
+            <h2 id="summary-title">Summary</h2>
+            <div class="summary-row"><span>Subtotal</span><strong data-cart-subtotal>$0.00</strong></div>
+            <div class="summary-row"><span>Shipping</span><strong>Complimentary</strong></div>
+            <div class="summary-total"><span>Total</span><strong data-cart-total>$0.00</strong></div>
+            <a class="button button-dark button-full" data-checkout-link href="/checkout.html">Continue to checkout <span aria-hidden="true">↗</span></a>
+            <p class="secure-note"><span aria-hidden="true">✦</span> Secure checkout · free standard shipping</p>
+          </aside>
+        </div>
+        <div class="empty-state" data-cart-empty hidden>
+          <div class="empty-icon">⌁</div>
+          <p class="eyebrow">A little room to fill</p>
+          <h2>Your bag is waiting.</h2>
+          <p>Explore the collection and bring home something useful.</p>
+          <a class="button button-dark" href="/">Explore the collection <span aria-hidden="true">↘</span></a>
+        </div>
+      </main>
+      <footer data-site-footer></footer>
+    </div>
+  </body>
+</html>

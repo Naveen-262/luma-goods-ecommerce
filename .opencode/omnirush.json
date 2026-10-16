@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "workspace": {
+    "name": "Luma Goods",
+    "createdAt": 1792055503418,
+    "preset": "starter"
+  },
+  "authorizedRoots": [
+    "C:\\Users\\Admin\\Luma Goods"
+  ],
+  "reload": null
+}

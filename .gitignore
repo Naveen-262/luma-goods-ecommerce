@@ -1,0 +1,24 @@
+# Node.js dependencies
+
+node_modules/
+
+# Environment variables and secrets
+
+.env
+.env.*
+!.env.example
+
+# Logs
+
+npm-debug.log*
+*.log
+
+# Operating system files
+
+.DS_Store
+Thumbs.db
+
+# Editor and temporary files
+
+.vscode/
+*.tmp
